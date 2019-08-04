@@ -39,3 +39,16 @@ This table shows the number of gun crimes and shooting incidents detected by Sho
 
 ![table](https://user-images.githubusercontent.com/24280548/62430213-66ce2f80-b6e7-11e9-81e3-97729289874d.JPG)
 
+
+
+
+
+
+
+**Automation**
+
+**Results**
+
+Wards 7 and 8 have more crime incidents than any other ward; both also have a large gap between the gun crimes reported and the number of gunshots detected by ShotSpotter. With careful consideration for duplicate incidents and unverified shots, these wards would be a good place to expand and hone the validity of the gunshot detection network. The data available includes a time field that could broaden the analysis. 
+
+Limitations of this analysis include the quality of the input data. 100m resolution accuracy of ShotSpotter data  loosely corresponds to the point data and may have significantly altered the final product maps. Even if the accuracy was within a few inches, the quality of the data, and therefore the analysis displayed in these maps depends on the validity of the sound sensor technology. Additionally, when aggregating to the ward level when we have block level data for where crime incidents are occuring could make it appear as if the entire ward is suffering from gun violence, when in reality it could be a very small block area within it. 
