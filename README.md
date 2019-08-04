@@ -27,3 +27,9 @@ Shotspotter Gun Shots: https://opendata.dc.gov/datasets/shot-spotter-gun-shots
 ![crimemaxxxp](https://user-images.githubusercontent.com/24280548/62429888-de4d9000-b6e2-11e9-9dd4-b2cbb23a6053.png)
 
 
+
+
+
+These maps were created qith QGIS in the python console. Vector selection tools parsed out points in the crime data layer that were not carried out with a gun. This created a new vector point layer that was then reclassified by the ward the point occured in by the vector general tool: join attributes by location. This join layer contained a field called count that represents the number of points in each ward. This count field was then divided by the population of that ward and multiplied by 10,000 to show the crimes per ward normalized by 10,000 people for appropriate comparison. The Shotspotter map contained only points related to gun crimes, so it was immediately joined to the ward polygon layer to get the same count field. The calculation for crime per ward per 10,000 people was calculated in the same way as in the crime map. 
+
+The calculation for crime or detected gunshots per ward per 10,000 people aims to avoid a more misleading map visualization where a higher population would inevitably show more crime. 
