@@ -19,6 +19,6 @@ Shotspotter Gun Shots: https://opendata.dc.gov/datasets/shot-spotter-gun-shots
 
 ![shotspotmap](https://user-images.githubusercontent.com/24280548/62429855-4cde1e00-b6e2-11e9-9093-17c0979c4249.jpg)
 
-![crimemap2](https://user-images.githubusercontent.com/24280548/62429868-79923580-b6e2-11e9-98db-72292d5550e1.jpg)
+
 
 
