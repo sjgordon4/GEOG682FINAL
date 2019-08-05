@@ -83,8 +83,8 @@ iface.addVectorLayer(jcrime,"jcrime","ogr")
 The map's symbology is based on the calculation 10,000* (the count calculated above) / (population in 2010 which is a field in the ward poly layer). 
 
 ```python
-X='Z:/hereyago/finalproj/dontcrash/ffffff.shp'
-processing.runalg('qgis:fieldcalculator',jshot2,"dpp",0,10,3,True,"10000.0 * count / POP_2010",X)
+X='Z:/hereyago/finalproj/dontcrash/finalsymbolized.shp'
+processing.runalg('qgis:fieldcalculator',jcrime,"dpp",0,10,3,True,"10000.0 * count / POP_2010",X)
 ```
 **Results**
 
