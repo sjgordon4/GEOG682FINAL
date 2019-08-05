@@ -51,6 +51,7 @@ This table shows the number of gun crimes and shooting incidents detected by Sho
 
 
 **Automation**
+
 In 'Gordon_GEOG682.py' you can access all of the code necessary to complete this analysis. Here are a few examples of how to get started if trying this analysis on your own.
 
 First, I added layers to the map with the following code. This example will follow setting up analysis for CRIME INCIDENTS. 
