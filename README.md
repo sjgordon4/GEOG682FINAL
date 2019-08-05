@@ -52,6 +52,27 @@ This table shows the number of gun crimes and shooting incidents detected by Sho
 
 **Automation**
 
+```python
+import processing
+Crime = "Z:/hereyago/finalproj/Crime_Incidents_in_2017.shp"#save shapefile as new variable
+iface.addVectorLayer(Crime,"Crime","ogr")
+#SELECTS CRIME ONLY
+processing.runalg("qgis:selectbyattribute", 
+    {'INPUT':Crime,'FIELD':"METHOD",'OPERATOR':0,'VALUE':'GUN'})
+#ADD WARD
+Ward="Z:/hereyago/finalproj/Ward_from_2012.shp"
+iface.addVectorLayer(Ward,"Ward","ogr")
+jcrime='Z:/hereyago/finalproj/jcrime.shp'
+processing.runalg('qgis:countpointsinpolygon',
+{'POLYGONS':Ward,
+'POINTS':Crime,
+'FIELD': 'count',
+'OUTPUT':jcrime})
+iface.addVectorLayer(jcrime,"jcrime","ogr")
+#JCRIME IS THE LAYER THAT HAS THE COUNT FOR CRIME INCIDENTS PER WARD
+```
+
+
 **Results**
 
 Wards 7 and 8 have more crime incidents than any other ward; both also have a large gap between the gun crimes reported and the number of gunshots detected by ShotSpotter. With careful consideration for duplicate incidents and unverified shots, these wards would be a good place to expand and hone the validity of the gunshot detection network. The data available includes a time field that could broaden the analysis. 
