@@ -80,8 +80,12 @@ processing.runalg('qgis:countpointsinpolygon',
 iface.addVectorLayer(jcrime,"jcrime","ogr")
 #JCRIME IS THE POLYGON LAYER THAT HAS THE COUNT FOR CRIME INCIDENTS PER WARD
 ```
+The map's symbology is based on the calculation 10,000* (the count calculated above) / (population in 2010 which is a field in the ward poly layer). 
 
-
+```python
+#X='Z:/hereyago/finalproj/dontcrash/ffffff.shp'
+#processing.runalg('qgis:fieldcalculator',jshot2,"dpp",0,10,3,True,"10000.0 * count / POP_2010",X)
+```
 **Results**
 
 Wards 7 and 8 have more crime incidents than any other ward; both also have a large gap between the gun crimes reported and the number of gunshots detected by ShotSpotter. With careful consideration for duplicate incidents and unverified shots, these wards would be a good place to expand and hone the validity of the gunshot detection network. The data available includes a time field that could broaden the analysis. 
