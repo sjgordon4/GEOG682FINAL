@@ -21,7 +21,8 @@ The data used in this analysis is from the District of Columbia’s open data po
 
 
 **ShotSpotter Map**
-![shotspotmap](https://user-images.githubusercontent.com/24280548/62429855-4cde1e00-b6e2-11e9-9093-17c0979c4249.jpg)
+![toswitchtojpeg](https://user-images.githubusercontent.com/24280548/62432763-6b9edd80-b6ff-11e9-970f-a27ad171226c.jpg)
+
 
 
 
@@ -33,7 +34,7 @@ The data used in this analysis is from the District of Columbia’s open data po
 
 
 
-These maps were created with QGIS in the python console. Vector selection tools parsed out points in the crime data layer that were not carried out with a gun. This created a new vector point layer that was then reclassified by the ward the point occurred  in by the vector general tool: join attributes by location. This join layer contained a field called count that represents the number of points in each ward. This count field was then divided by the population of that ward and multiplied by 10,000 to show the crimes per ward normalized by 10,000 people for appropriate comparison. The ShotSpotter map contained only points related to gun crimes, so it was immediately joined to the ward polygon layer to get the same count field. The calculation for crime per ward per 10,000 people was calculated in the same way as in the crime map. 
+These maps were created with QGIS in the python console. Vector selection tools parsed out points in the crime data layer that were not carried out with a gun. This created a new vector point layer that was then reclassified by the ward the point occurred  in by the vector general tool: join attributes by location. This join layer contained a field called count that represents the number of points in each ward. This count field was then divided by the population of that ward and multiplied by 10,000 to show the crimes per ward normalized by 10,000 people for appropriate comparison. The ShotSpotter map contained only points related to gun crimes, but had dates outside of 2017. The 2017 dates were parsed out and then joined to the ward polygon layer to get the same count field. The calculation for crime per ward per 10,000 people was calculated in the same way as in the crime map. 
 
 The calculation for crime or detected gunshots per ward per 10,000 people aims to avoid a more misleading map visualization where a higher population would inevitably show more crime. 
 
