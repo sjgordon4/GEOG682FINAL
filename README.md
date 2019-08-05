@@ -41,7 +41,8 @@ The calculation for crime or detected gunshots per ward per 10,000 people aims t
 This table shows the number of gun crimes and shooting incidents detected by ShotSpotter per 10,000 people in 2017 in each ward.
 
 
-![table](https://user-images.githubusercontent.com/24280548/62430213-66ce2f80-b6e7-11e9-81e3-97729289874d.JPG)
+![yaynewtable](https://user-images.githubusercontent.com/24280548/62432958-62624080-b700-11e9-9a7a-80ebe8ff8d74.JPG)
+
 
 
 
