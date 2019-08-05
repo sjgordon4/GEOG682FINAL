@@ -78,7 +78,7 @@ processing.runalg('qgis:countpointsinpolygon',
 'FIELD': 'count',
 'OUTPUT':jcrime})
 iface.addVectorLayer(jcrime,"jcrime","ogr")
-#JCRIME IS THE LAYER THAT HAS THE COUNT FOR CRIME INCIDENTS PER WARD
+#JCRIME IS THE POLYGON LAYER THAT HAS THE COUNT FOR CRIME INCIDENTS PER WARD
 ```
 
 
