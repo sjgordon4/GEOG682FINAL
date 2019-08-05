@@ -51,14 +51,23 @@ This table shows the number of gun crimes and shooting incidents detected by Sho
 
 
 **Automation**
+In 'Gordon_GEOG682.py' you can access all of the code necessary to complete this analysis. Here are a few examples of how to get started if trying this analysis on your own.
 
+First, I added layers to the map with the following code. This example will follow setting up analysis for CRIME INCIDENTS. 
 ```python
 import processing
 Crime = "Z:/hereyago/finalproj/Crime_Incidents_in_2017.shp"#save shapefile as new variable
 iface.addVectorLayer(Crime,"Crime","ogr")
+```
+Next, I selected only the crime that involved a gun:
+
+```python
 #SELECTS CRIME ONLY
 processing.runalg("qgis:selectbyattribute", 
     {'INPUT':Crime,'FIELD':"METHOD",'OPERATOR':0,'VALUE':'GUN'})
+```
+Finally, I added the wards and counted how many crime incidents were in each ward:
+```python
 #ADD WARD
 Ward="Z:/hereyago/finalproj/Ward_from_2012.shp"
 iface.addVectorLayer(Ward,"Ward","ogr")
