@@ -15,11 +15,11 @@ The data used in this analysis is from the District of Columbia’s open data po
 [Crime in 2017](https://opendata.dc.gov/datasets/crime-incidents-in-2017)
 
 
-[DC Wards] (https://opendata.dc.gov/datasets/ward-from-2012)
+[DC Wards](https://opendata.dc.gov/datasets/ward-from-2012)
 
 
 
-[ShotSpotter Gun Shots] (https://opendata.dc.gov/datasets/shot-spotter-gun-shots)
+[ShotSpotter Gun Shots](https://opendata.dc.gov/datasets/shot-spotter-gun-shots)
 
 
 
